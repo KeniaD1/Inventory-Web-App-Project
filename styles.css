@@ -1,0 +1,15 @@
+header {
+    text-align: center;
+    background: yellowgreen;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    color: hotpink;
+
+}
+
+ul{
+    text-align: center;
+    color:brown;
+    text-decoration:none;
+    display:grid
+}
