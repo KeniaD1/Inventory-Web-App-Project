@@ -13,3 +13,22 @@ ul{
     text-decoration:none;
     display:grid
 }
+
+.container{
+    height: 400px;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 66.667% 33.334%;	
+  }
+
+  .box-a {
+    background-color: rgba(225, 112, 161, 0.303);
+    color: #090909;
+    padding: 3em;
+}
+  
+.box-b{
+text-align: right;
+}
