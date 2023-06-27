@@ -32,3 +32,14 @@ ul{
 .box-b{
 text-align: right;
 }
+
+form{
+    display: grid;
+}
+
+h3{
+    text-align: center;
+}
+label{
+    text-align: left ;
+}
