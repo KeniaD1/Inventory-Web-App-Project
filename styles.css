@@ -1,45 +1,62 @@
 header {
     text-align: center;
-    background: yellowgreen;
+    background: black;
     display: grid;
     grid-template-columns: repeat(1, 100%);
     color: hotpink;
 
 }
 
-ul{
+ul {
     text-align: center;
-    color:brown;
-    text-decoration:none;
-    display:grid
+    color: brown;
+    text-decoration: none;
+    display: grid
 }
 
-.container{
+.container {
     height: 400px;
-  }
+}
 
-  .wrapper {
+.wrapper {
     display: grid;
-    grid-template-columns: 66.667% 33.334%;	
-  }
+    grid-template-columns: 66.667% 33.334%;
+}
 
-  .box-a {
+.box-a {
     background-color: rgba(225, 112, 161, 0.303);
     color: #090909;
     padding: 3em;
 }
-  
-.box-b{
-text-align: right;
+
+.box-b {
+    text-align: right;
 }
 
-form{
+form {
     display: grid;
 }
 
-h3{
+h3 {
     text-align: center;
 }
-label{
-    text-align: left ;
+
+label {
+    text-align: left;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .wrapper {
+        
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .box-b {
+        text-align: center;
+    }
+
 }
