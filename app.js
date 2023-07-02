@@ -42,7 +42,7 @@ for (const stockBttn of allInstockButtons) {
 const form = document.querySelectorAll('#form')
 for (const errForm of form) {
     errForm.addEventListener('invalid', (event) => {
-        this.setCustomValidity("Please enter required field.")
+        alert("Please enter required field.")
     })
 }
 
