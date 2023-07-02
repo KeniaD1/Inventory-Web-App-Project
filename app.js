@@ -12,7 +12,7 @@
 
 
 const allRemoveButtons = document.querySelectorAll('#rmv')
-console.log(allRemoveButtons)
+//console.log(allRemoveButtons)
 
 for (const rmvBttn of allRemoveButtons) {
     rmvBttn.addEventListener('click', (event) => {
@@ -22,8 +22,29 @@ for (const rmvBttn of allRemoveButtons) {
 }
 //all remove bttns to remove div on click
 
+let instockOrOutstock = true
 
+const allInstockButtons = document.querySelectorAll('#stock')
+console.log(allInstockButtons)
+for (const stockBttn of allInstockButtons) {
+    stockBttn.addEventListener('click', (event) => {
+        instockOrOutstock = !instockOrOutstock
 
+        if (instockOrOutstock) {
+            stockBttn.innerText = "InStock"
+        } else {
+            stockBttn.innerText = "Out Of Stock"
+            stockBttn.style.color = 'red'
+        }
+
+    })
+}
+const form = document.querySelectorAll('#form')
+for (const errForm of form) {
+    errForm.addEventListener('invalid', (event) => {
+        this.setCustomValidity("Please enter required field.")
+    })
+}
 
 
 

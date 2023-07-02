@@ -21,22 +21,22 @@
                 <div class="box-a">
 
                     <section>
-                        
+
 
                         <div class=" bag-with-text">
                             <img src="https://galoresunshine.com/cdn/shop/products/PURSE.jpg?v=1650197889"
                                 alt="Protect Black Women Mini Tote" width="300" height="300">
-                            <h2> "PROTECT BLACK WOMEN" Mini Tote Bag </h2>
+                            <h2> "PROTECT BLACK PEOPLE" Mini Tote Bag </h2>
 
                             <form action="bag_inventory" method="post">
-                                <button type="button">InStock</button>
+                                <button id="stock" type="button">InStock</button>
 
                                 <button id='rmv' type="button" onclick="alert('Removing item')">Remove</button>
 
 
                             </form>
                         </div>
-                      
+
                         <!--  add color options buttons -->
                         <div class=" bag-with-text">
                             <img src="https://cdn.shopify.com/s/files/1/0527/8626/6275/products/68022_2.jpg?v=1611572916&width=1440"
@@ -44,7 +44,7 @@
                             <h2> Authentic Crocodile Shoulder Bag</h2>
 
                             <form action="bag_inventory2" method="post">
-                                <button type="button">InStock</button>
+                                <button id="stock" type="button">InStock</button>
                                 <button id='rmv' type="button" onclick="alert('Removing item')">Remove</button>
 
 
@@ -56,7 +56,7 @@
                             <h2> Geniune Leather Crossbody Bag</h2>
 
                             <form action="bag_inventory2" method="post">
-                                <button type="button">InStock</button>
+                                <button id="stock" type="button">InStock</button>
                                 <button id='rmv' type="button" onclick="alert('Removing item')">Remove</button>
 
                             </form>
@@ -67,11 +67,11 @@
                 <div class="box-b">
                     <h3> Add Bag</h3>
                     <form action="add to cart" method="post">
-                        <input type="text" name="name" placeholder="Bag Name">
+                        <input id="form" type="text" name="name" placeholder="Bag Name" required>
                         <br>
-                        <input type="number" name="price" placeholder="Bag Price">
+                        <input id="form"type="number" name="price" placeholder="Bag Price" required>
                         <br>
-                        <input type="text" name="image" placeholder="Insert Bag Url">
+                        <input id="form" type="text" name="image" placeholder="Insert Bag Url" required>
                         <br>
                         <label>
                             InStock <br>
@@ -88,7 +88,8 @@
                         </label>
                         <br>
 
-                        <input type="submit" value="Submit">
+                        <button type="button" onclick="alert('Submitting item ')">Submit</button>
+
                         <button type="button" onclick="alert('Resetting page')">Reset</button>
 
 
@@ -106,10 +107,3 @@
 
 
 
-<!-- ////
-<form action="bag_inventory" method="post">
-    <input type="text" name="name" placeholder="Bag Name">
-
-    <input type="number" name="price" placeholder="Bag Price">
-    <input type="submit" value="Submit">
-</form> -->
