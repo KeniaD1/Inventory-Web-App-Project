@@ -25,7 +25,7 @@ for (const rmvBttn of allRemoveButtons) {
 let instockOrOutstock = true
 
 const allInstockButtons = document.querySelectorAll('#stock')
-console.log(allInstockButtons)
+//console.log(allInstockButtons)
 for (const stockBttn of allInstockButtons) {
     stockBttn.addEventListener('click', (event) => {
         instockOrOutstock = !instockOrOutstock
@@ -47,8 +47,8 @@ for (const errForm of form) {
 }
 
 
-
-
+const submitForm = document.querySelector('.box-b')
+console.log(submitForm)
 
 
 
