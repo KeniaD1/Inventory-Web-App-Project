@@ -46,9 +46,26 @@ label {
     text-align: left;
 }
 
-h2{
+h2 {
     text-decoration: underline;
-    
+
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+
+}
+
+footer h3 {
+    text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -61,4 +78,7 @@ h2{
         text-align: center;
     }
 
+    .box-a {
+        text-align: center;
+    }
 }

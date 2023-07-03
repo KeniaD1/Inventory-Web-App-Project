@@ -5,7 +5,7 @@ const allRemoveButtons = document.querySelectorAll('#rmv');
 
 for (const rmvBttn of allRemoveButtons) {
     rmvBttn.addEventListener('click', (event) => {
-      
+
         event.target.parentNode.parentNode.remove()
     })
 }
@@ -72,5 +72,5 @@ formSubmit.addEventListener('submit', (event) => {
 })
 ///add functionality to color changing buttons
 
-
+""
 
