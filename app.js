@@ -1,22 +1,11 @@
 
-// Element.addEventListener('click', function)
-// const removeBtn = document.getElementById('rmv')
-// //console.log(removeBtn)
-// const clear = document.getElementById('num1')
-// //console.log(clear)
-// // removeBtn.addEventListener('click', (event) => {
-//     if (event) {
-//         clear.remove()
-//     }
-// })
 
 
-const allRemoveButtons = document.querySelectorAll('#rmv')
-//console.log(allRemoveButtons)
+const allRemoveButtons = document.querySelectorAll('#rmv');
 
 for (const rmvBttn of allRemoveButtons) {
     rmvBttn.addEventListener('click', (event) => {
-        // console.log(event.target.parentNode.parentNode)
+      
         event.target.parentNode.parentNode.remove()
     })
 }
@@ -25,7 +14,7 @@ for (const rmvBttn of allRemoveButtons) {
 let instockOrOutstock = true
 
 const allInstockButtons = document.querySelectorAll('#stock')
-//console.log(allInstockButtons)
+
 for (const stockBttn of allInstockButtons) {
     stockBttn.addEventListener('click', (event) => {
         instockOrOutstock = !instockOrOutstock
@@ -41,37 +30,47 @@ for (const stockBttn of allInstockButtons) {
 }
 
 // //provide error message if required fields arent filled 
-// const formSubmit = document.querySelector('form')
 
-// formSubmit.addEventListener('submit', (event) => {
-//     event.preventDefault()
 
-//     const newItem = document.querySelector('.box-a')
 
-//     const bagName = document.createElement('h2')
-//     bagName.event.target.name.value;
-//     newItem.append(bagName);
 
+
+
+
+/// select the div to submit form on click to box a 
+
+
+const formSubmit = document.querySelector('form');
+
+formSubmit.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const submitForm = document.querySelector('section');
+    //console.log(submitForm)
+    const newItem = document.createElement('div');
+    newItem.classList.add('bag-with-text');
+
+    submitForm.append(newItem);
+
+    const bagImage = document.createElement('img');
+    bagImage.src = "https://www.qualitylogoproducts.com/images/_promo-university/tote-bags/tote-material-made-outof.png"
+    bagImage.setAttribute()
+    newItem.append(bagImage);
+
+    const bagName = document.createElement('h2');
+    bagName.innerText = event.target.name.value;
+    newItem.append(bagName);
+
+    const newForm = document.createElement('form');
+
+
+    newItem.append(submitForm);
 
 
 
 
 })
-/// select the div to submit form on click to box a 
-const submitForm = document.querySelector('section')
-//console.log(submitForm)
-const newItem  = 
-
-
 ///add functionality to color changing buttons
 
 
 
-// function renderBags() {
-//     var div = document.getElementById("bag-inventory");
-//     for (var i = 0; i < bags.length; i++) {
-//       var bag = bags[i];
-//       var li = document.createElement("li");
-//       li.textContent = bag.name + " " + bag.color + " " + bag.price;
-//       div.appendChild(li);
-//     }}
