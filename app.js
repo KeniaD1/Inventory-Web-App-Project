@@ -39,19 +39,31 @@ for (const stockBttn of allInstockButtons) {
 
     })
 }
-const form = document.querySelectorAll('#form')
-for (const errForm of form) {
-    errForm.addEventListener('invalid', (event) => {
-        alert("Please enter required field.")
-    })
-}
+
+// //provide error message if required fields arent filled 
+// const formSubmit = document.querySelector('form')
+
+// formSubmit.addEventListener('submit', (event) => {
+//     event.preventDefault()
+
+//     const newItem = document.querySelector('.box-a')
+
+//     const bagName = document.createElement('h2')
+//     bagName.event.target.name.value;
+//     newItem.append(bagName);
 
 
-const submitForm = document.querySelector('.box-b')
-console.log(submitForm)
 
 
 
+})
+/// select the div to submit form on click to box a 
+const submitForm = document.querySelector('section')
+//console.log(submitForm)
+const newItem  = 
+
+
+///add functionality to color changing buttons
 
 
 
